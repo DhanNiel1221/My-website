@@ -125,8 +125,8 @@
     <div class="login-form">
         <h2>Login</h2>
         <form id="loginForm" onsubmit="return validateLogin(event)">
-            <input type="text" id="email" placeholder="Email" required />
-            <input type="password" id="password" placeholder="Password" required />
+            <input type="text" id="email" placeholder="Username" />
+            <input type="password" id="password" placeholder="Password" />
             <button type="submit" id="loginButton">Login</button>
         </form>
         <div class="error-message" id="errorMessage"></div>
@@ -134,18 +134,18 @@
 
     <script>
         let loginAttempts = 0;
-        const correctEmail = 'admin123';
+        const correctUsername = 'admin123';
         const correctPassword = 'admin123';  // In real-world use, this would come from the server
 
         function validateLogin(event) {
             event.preventDefault();
-            const email = document.getElementById('email').value;
+            const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
 
             errorMessage.textContent = '';
 
             // Validate login credentials
-            if (email === correctEmail && password === correctPassword) {
+            if (username === correctUsername && password === correctPassword) {
                 window.location.href = "file:///C:/ALCONERA%202A/WST2/HOME.html";
                 alert('Login successful');
                 
