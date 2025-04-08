@@ -125,7 +125,7 @@
     <div class="login-form">
         <h2>Login</h2>
         <form id="loginForm" onsubmit="return validateLogin(event)">
-            <input type="text" id="email" placeholder="Username" />
+            <input type="text" id="username" placeholder="Username" />
             <input type="password" id="password" placeholder="Password" />
             <button type="submit" id="loginButton">Login</button>
         </form>
@@ -146,7 +146,7 @@
 
             // Validate login credentials
             if (username === correctUsername && password === correctPassword) {
-                window.location.href = "content://media/external/downloads/1000002812";
+                window.location.href = "file:///C:/ALCONERA%202A/WST2/HOME.html";
                 alert('Login successful');
                 
             } else {
